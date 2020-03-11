@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+	<title>Search Query</title>
+</head>
+<body>
+	<!-- As a heading -->
+	<h3 class="text-center bg-dark text-white pt-4 pb-4" style="margin-top: -5.5% !important;">Search Query With Flask</h3>
+	<h1 class="text-center" style="margin-top: 6%;">WELCOME!</h1>
+	<p class="text-center mt-5">Search for a user</p>
+	<p class="text-center"><a href="{{ url_for('search') }}" class="md btn btn-outline-info">Search</a></p>
+	<p class="text-center" style="margin-top: 4%;">Add a User</p>
+	<p class="text-center"><a href="{{ url_for('new') }}" class="md btn btn-outline-info">Add User</a></p>
+	<script src="{{ url_for('static', filename='jquery-3.4.1.min.js') }}" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='popper.min.js') }}" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}" crossorigin="anonymous"></script>
+</body>
+</html>
